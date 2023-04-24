@@ -6,6 +6,7 @@ import categories from "./categories";
 import ExpenseList2 from "./expense-tracker/components/ExpenseList2";
 import ExpenseFilter2 from "./expense-tracker/components/ExpenseFilter2";
 import ExpenseForm2 from "./expense-tracker/components/ExpenseForm2";
+import FormZod from "./zod-form/components/FormZod";
 
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -32,6 +33,9 @@ const App = () => {
 
   return (
     <div>
+      <div className="mb-5">
+        <FormZod />
+      </div>
       <div className="mb-5">
         <ExpenseForm
           onSubmit={(expense) =>
