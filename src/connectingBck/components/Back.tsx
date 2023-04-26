@@ -6,7 +6,7 @@ const Back = () => {
   //   afterRender
   useEffect(() => {
     //   Side effect
-    if (ref.current) ref.current.focus();
+    // if (ref.current) ref.current.focus();
   });
 
   useEffect(() => {
